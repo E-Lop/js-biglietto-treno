@@ -10,9 +10,16 @@ L'output del prezzo finale va messo fuori in forma umana
 
 // chiedere a utente quanti km deve viaggiare
 const tripLength = parseInt(prompt('Quanti km devi percorrere in treno?'));
+console.log(tripLength);
+
 // chiedere a utente quanti anni ha
 const userAge = parseInt(prompt('Quanti anni hai?'));
+console.log(userAge);
+
 // calcolare prezzo standard del biglietto
+let ticketPrice = tripLength * 0.21;
+console.log(ticketPrice);
+
 // se utente ha meno di 18 anni applicare 20% di sconto
 // se utente ha più di 65 anni applicare 40% di sconto
 // pubblicare in pagina il prezzo del biglietto arrotondato ai centesimi di euro
