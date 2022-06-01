@@ -9,7 +9,9 @@ L'output del prezzo finale va messo fuori in forma umana
 (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
 
 // chiedere a utente quanti km deve viaggiare
+const tripLength = parseInt(prompt('Quanti km devi percorrere in treno?'));
 // chiedere a utente quanti anni ha
+const userAge = parseInt(prompt('Quanti anni hai?'));
 // calcolare prezzo standard del biglietto
 // se utente ha meno di 18 anni applicare 20% di sconto
 // se utente ha più di 65 anni applicare 40% di sconto
