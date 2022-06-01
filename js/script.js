@@ -20,6 +20,23 @@ console.log(userAge);
 let ticketPrice = tripLength * 0.21;
 console.log(ticketPrice);
 
+let discountedTicketPrice;
+let messageToUser;
 // se utente ha meno di 18 anni applicare 20% di sconto
 // se utente ha più di 65 anni applicare 40% di sconto
+if (userAge < 18) {
+  discountedTicketPrice = ticketPrice * 0.8;
+  messageToUser = `Il costo del biglietto è ${discountedTicketPrice.toFixed(
+    2
+  )} euro`;
+} else if (userAge > 65) {
+  discountedTicketPrice = ticketPrice * 0.6;
+  messageToUser = `Il costo del biglietto è ${discountedTicketPrice.toFixed(
+    2
+  )} euro`;
+} else {
+  messageToUser = `Il costo del biglietto è ${ticketPrice.toFixed(2)} euro`;
+}
+
 // pubblicare in pagina il prezzo del biglietto arrotondato ai centesimi di euro
+document.getElementById('final_message').innerHTML = messageToUser;
